@@ -1,4 +1,6 @@
 import 'package:fixit/components/constants.dart';
+import 'package:fixit/components/custom_dropdown%20city.dart';
+import 'package:fixit/components/custom_dropdown%20govern.dart';
 import 'package:fixit/src/data/app_navigation.dart';
 import 'package:fixit/src/data/app_size.dart';
 import 'package:flutter/material.dart';
@@ -29,10 +31,10 @@ class SearchDialog extends StatelessWidget {
             const CustomDropDown(
               hint: "CHOOSE THE PROBLEM",
             ),
-            const CustomDropDown(
+            const CustomDropDownCity(
               hint: "IN THIS CITY",
             ),
-            const CustomDropDown(
+            const CustomDropDownGovern(
               hint: "IN THIS AREA",
             ),
             GestureDetector(

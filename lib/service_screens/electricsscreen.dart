@@ -1,4 +1,6 @@
 import 'package:fixit/components/constants.dart';
+import 'package:fixit/components/custom_dropdown%20city.dart';
+import 'package:fixit/components/custom_dropdown%20govern.dart';
 import 'package:fixit/components/technicians_card.dart';
 import 'package:flutter/material.dart';
 
@@ -97,13 +99,13 @@ class EverySreviceScreen extends StatelessWidget {
                             const SizedBox(
                               height: 10,
                             ),
-                            const CustomDropDown(
+                            const CustomDropDownCity(
                               hint: "IN THIS CITY",
                             ),
                             const SizedBox(
                               height: 10,
                             ),
-                            const CustomDropDown(
+                            const CustomDropDownGovern(
                               hint: "IN THIS AREA",
                             ),
                             Container(

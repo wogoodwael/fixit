@@ -14,12 +14,14 @@ class CustomTextFormField extends StatefulWidget {
       required this.isLast,
       this.controller,
       required this.title,
-      required this.obscure});
+      required this.obscure,
+      this.readOnly});
   final IconData icon;
   final String hint;
   final bool obscure;
   final String title;
   final bool isLast;
+  bool? readOnly;
   Function(String)? onChanged;
   TextEditingController? controller;
 
@@ -43,6 +45,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
           ),
         ),
         TextFormField(
+          readOnly: widget.readOnly ?? false,
           controller: widget.controller,
           validator: (data) {
             if (data!.isEmpty) {

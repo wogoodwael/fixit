@@ -130,7 +130,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
                         hint: userName ?? "",
                         title: "Full Name",
                         obscure: false,
-                        icon: Ionicons.person_outline,
+                        icon: Ionicons.person_outline, readOnly: false,
                       ),
                       SizedBox(
                         height: PhoneSize.phoneHeight(context) * 0.01,
@@ -141,7 +141,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
                         hint: email ?? "",
                         title: "E-Mail",
                         obscure: false,
-                        icon: Ionicons.mail_outline,
+                        icon: Ionicons.mail_outline, readOnly: true,
                       ),
                       SizedBox(
                         height: PhoneSize.phoneHeight(context) * 0.01,
@@ -151,7 +151,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
                         hint: '********',
                         title: "Password",
                         obscure: true,
-                        icon: Ionicons.lock_closed_outline,
+                        icon: Ionicons.lock_closed_outline, readOnly: true,
                       ),
                       SizedBox(
                         height: PhoneSize.phoneHeight(context) * 0.01,
@@ -161,7 +161,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
                         hint: '********',
                         title: "Confirm Password",
                         obscure: true,
-                        icon: Ionicons.lock_closed_outline,
+                        icon: Ionicons.lock_closed_outline, readOnly: true,
                       ),
                       SizedBox(
                         height: PhoneSize.phoneHeight(context) * 0.01,
